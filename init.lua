@@ -21,4 +21,4 @@ minetest.register_globalstep(function(dtime)
 end)
 
     
-minetest.register_cheat("FastBridge", "Combat", "fast_bridge")
+minetest.register_cheat("FastBridge", "Movement", "fast_bridge")
