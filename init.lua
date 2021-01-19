@@ -11,9 +11,6 @@ minetest.register_globalstep(function(dtime)
 
         posxdecimal = math.abs(posxdecimal)
         poszdecimal = math.abs(poszdecimal)
-
-        print("x: " .. posxdecimal)
-        print("z: " .. poszdecimal)
         
         if posxdecimal > 0.7 and posxdecimal < 0.9 or poszdecimal > 0.7 and poszdecimal < 0.9 or posxdecimal > 0.5 and posxdecimal < 0.3 or posxdecimal < 0.3 and posxdecimal > 0.1 or poszdecimal > 0.5 and poszdecimal < 0.3 or poszdecimal < 0.3 and poszdecimal > 0.1 then
             minetest.set_keypress("sneak", true)
